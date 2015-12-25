@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 21
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        applicationId "com.culiu.mhvp"
+        minSdkVersion 7
+        targetSdkVersion 21
+        versionCode 57
+        versionName "3.3"
+    }
+
+    signingConfigs {
+        myConfig {
+            storeFile file("MagicHeaderViewPager_demo.jks")
+            storePassword "123456"
+            keyAlias "com.culiu.mhvp"
+            keyPassword "123456"
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.myConfig
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+}
+task clearApk(type: Delete) {
+    delete '../apk/' + POM_ARTIFACT_ID + '_' + VERSION_NAME + '.apk'
+}
+task makeApk(type: Copy) {
+    from('build/outputs/apk/')
+    into('apk/')
+    include("demo-release.apk")
+    rename("demo-release.apk", POM_ARTIFACT_ID + '_' + VERSION_NAME + '.apk')
+}
+makeApk.dependsOn(clearApk, build)
+
+// local dependencies
+dependencies {
+    compile project(':mhvp-integrated-ptr')
+}
+
+// remote dependencies
+//dependencies {
+//    compile 'com.android.support:support-v4:21.0.3'
+//    compile 'com.culiu.android:mhvp-core:2.1.2@aar'
+//    compile 'com.culiu.android:mhvp-integrated-ptr:2.1.2@aar'
+//}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="mhvp"/>
+    <item type="id" name="id_for_empty_content"/>
+    <item type="id" name="id_for_auto_completion_content"/>
+    <item type="id" name="id_for_auto_completion_footer"/>
+</resources>

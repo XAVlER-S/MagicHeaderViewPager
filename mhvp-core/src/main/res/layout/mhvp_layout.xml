@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/mhvp_rootView"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<com.culiu.mhvp.core.ScrollableViewPager
+		android:id="@+id/mhvp_pager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	<com.culiu.mhvp.core.layout.TranslatableLinearLayout
+		android:id="@+id/mhvp_header"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:layout_gravity="top"
+		android:orientation="vertical"
+		 >
+
+		<com.culiu.mhvp.core.layout.SizeSensitiveLinearLayout
+			android:id="@+id/mhvp_headerCustom"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+		</com.culiu.mhvp.core.layout.SizeSensitiveLinearLayout>
+
+		<!--<LinearLayout-->
+			<!--android:id="@+id/tabs_area"-->
+			<!--android:layout_width="match_parent"-->
+			<!--android:layout_height="48dp"-->
+			<!--android:orientation="horizontal"-->
+			<!-->-->
+
+			<!--<com.culiu.core.widget.PagerSlidingTabStrip-->
+				<!--android:id="@+id/tabs"-->
+				<!--android:layout_width="wrap_content"-->
+				<!--android:layout_height="match_parent"-->
+				<!--android:layout_weight="1"/>-->
+
+			<!--<ImageView-->
+				<!--android:layout_width="50dp"-->
+				<!--android:layout_height="match_parent"-->
+				<!--android:src="@drawable/switch_grid"-->
+				<!--android:scaleType="centerCrop"/>-->
+		<!--</LinearLayout>-->
+	</com.culiu.mhvp.core.layout.TranslatableLinearLayout>
+
+</merge>

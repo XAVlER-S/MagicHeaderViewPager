@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="welcomeButtonStyle">
+        <item name="android:background">@drawable/bg_btn_welcome</item>
+        <item name="android:padding">13dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+</resources>

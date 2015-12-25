@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <View
+        android:id="@+id/gap1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_pure_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Only ListView"
+        style="@style/welcomeButtonStyle"/>
+
+    <Button
+        android:id="@+id/btn_pure_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Only Scrollview"
+        style="@style/welcomeButtonStyle"/>
+
+    <Button
+        android:id="@+id/btn_pure_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Only GridView"
+        style="@style/welcomeButtonStyle"/>
+
+    <View
+        android:id="@+id/gap2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_mix_innerscroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Not Pullable (Mixed)"
+        style="@style/welcomeButtonStyle"/>
+
+    <Button
+        android:id="@+id/btn_pull_to_add_inner_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Pull to add Inner Header (Mixed)"
+        style="@style/welcomeButtonStyle"/>
+
+    <Button
+        android:id="@+id/btn_pull_to_add_magic_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Pull to add Magic Header (Mixed)"
+        style="@style/welcomeButtonStyle"/>
+
+    <Button
+        android:id="@+id/btn_pull_to_add_magic_header_complicated_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Pull to add Magic Header \n(Mixed) (Complicated Header)"
+        style="@style/welcomeButtonStyle"/>
+
+    <View
+        android:id="@+id/gap3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+</LinearLayout>

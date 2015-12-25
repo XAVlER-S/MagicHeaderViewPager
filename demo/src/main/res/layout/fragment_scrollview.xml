@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.culiu.mhvp.core.InnerScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inner_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:overScrollMode="never">
+
+</com.culiu.mhvp.core.InnerScrollView>

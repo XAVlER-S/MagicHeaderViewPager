@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.culiu.mhvp.integrated.ptr.PullToRefreshInnerScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pull_refresh_inner_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    ptr:ptrAnimationStyle="rotate"
+    ptr:ptrMode="pullDownFromTop"
+    ptr:ptrHeaderLayout="@layout/pull_to_refresh_header_vertical"
+    android:overScrollMode="never">
+
+</com.culiu.mhvp.integrated.ptr.PullToRefreshInnerScrollView>
