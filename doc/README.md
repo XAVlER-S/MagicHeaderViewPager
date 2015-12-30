@@ -1,4 +1,4 @@
-Guide: How to implement simplest MagicHeaderViewPager?
+**Guide: How to implement simplest MagicHeaderViewPager?**
 
 1.Add dependencies in your build.gradle
 ```Java
@@ -46,6 +46,10 @@ public class DemoListFragment extends Fragment implements InnerScrollerContainer
 
         return viewThis;
     }
+
+    ...
+
+}
 ```
 You need to do something about your adapter and data.
 
@@ -87,6 +91,11 @@ public class DemoPagerAdapter extends FragmentPagerAdapter implements OuterPager
     @Override
     public final Fragment getItem(int position) {
         return new DemoListFragment();
+    }
+
+    ...
+
+}
 ```
 
 5.Add follow code into your DemoActivity's onCreate(Bundle) :
@@ -113,14 +122,14 @@ public class DemoPagerAdapter extends FragmentPagerAdapter implements OuterPager
     mMagicHeaderViewPager.setPagerAdapter(mPagerAdapter);
 ```
 
-R.id.mhvp_parent is id of the parent you want magicHeaderViewPager attach to. Usually let the root view in your activity's layout xml like below is Ok.
+"R.id.mhvp_parent" is id of the parent you want magicHeaderViewPager attach to. Usually to let the root view in your activity's layout xml like this is Ok.
 ```Xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/mhvp_parent"
 ...
 ```
 
-6. Now, you can enjoy your MagicHeaderViewPager. To add a magic header:
+6.Now, you can enjoy your MagicHeaderViewPager. To add a magic header:
 ```Java
     //TODO create your view
     View view = ...;

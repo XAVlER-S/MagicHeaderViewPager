@@ -1,5 +1,5 @@
 # MagicHeaderViewPager
-A ViewPager with a header can be fixed and many listFragments, gridFragments and ScrollFragments inside.
+HeaderViewPager with a header can be fixed and many scrollable Fragments (listFragments, gridFragments and ScrollFragments) inside.
 
 # Introduction
 ### 0. Example
@@ -68,7 +68,7 @@ dependencies {
 }
 ```
 
-For more details, see [Guide](https://github.com/XavierSAndroid/MagicHeaderViewPager/tree/master/doc) or [Demo](https://github.com/XavierSAndroid/MagicHeaderViewPager/tree/master/demo) for more exmaple details.
+For more details, see [Guide](https://github.com/XavierSAndroid/MagicHeaderViewPager/tree/master/doc) or [Demo](https://github.com/XavierSAndroid/MagicHeaderViewPager/tree/master/demo).
 
 # Developed By
 
