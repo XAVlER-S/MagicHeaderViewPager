@@ -15,7 +15,7 @@ HeaderViewPager with a header can be fixed and many scrollable Fragments (listFr
 <br>
 <br>
 
-**0.3、Suppert Mixed ListView items and their heights need not be the same**
+**0.3、Support Mixed ListView items and their heights need not be the same**
 
 ![](https://raw.githubusercontent.com/XavierSAndroid/MagicHeaderViewPager/master/pics/3.gif)
 <br>
