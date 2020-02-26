@@ -1,3 +1,6 @@
+# Deprecated
+This project is archived.
+
 # MagicHeaderViewPager
 HeaderViewPager with a header can be fixed and many scrollable Fragments (listFragments, gridFragments and ScrollFragments) inside.
 
